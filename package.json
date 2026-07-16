@@ -5,14 +5,14 @@
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
-    "@vitejs/plugin-vue": "latest",
-    "vite": "latest",
-    "typescript": "latest",
-    "vue": "latest",
-    "vue-router": "latest",
-    "ant-design-vue": "latest"
+    "@vitejs/plugin-vue": "^5.2.4",
+    "vite": "^6.3.5",
+    "typescript": "^5.8.3",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1",
+    "ant-design-vue": "^4.2.6"
   },
   "devDependencies": {
-    "vue-tsc": "latest"
+    "vue-tsc": "^2.2.12"
   }
 }
