@@ -1,19 +1,43 @@
 <template>
   <main v-if="screen === 'login'" class="auth-screen">
+    <div class="login-orbits" aria-hidden="true"></div>
     <button class="auth-close" aria-label="关闭">×</button>
-    <section class="auth-hero">
+
+    <section class="auth-hero" aria-label="欢迎使用慧听说">
       <h1>欢迎使用！</h1>
       <h2>慧听说</h2>
       <i></i>
-      <div class="robot-stage"><div class="robot-face">AI</div><div class="book-prop">ENGLISH<br><small>Listening & Speaking</small></div></div>
+      <div class="hero-decor star">★</div>
+      <div class="hero-decor chat"><span></span><span></span><span></span></div>
+      <div class="hero-scene" aria-hidden="true">
+        <div class="scene-platform"></div>
+        <div class="english-book">
+          <b>ENGLISH</b>
+          <span>Listening &<br />Speaking</span>
+          <em></em>
+        </div>
+        <div class="plant"><i></i><i></i><i></i><i></i><b></b></div>
+        <div class="robot">
+          <div class="antenna left"></div>
+          <div class="antenna right"></div>
+          <div class="robot-head">
+            <div class="robot-screen"><span class="eye left"></span><span class="eye right"></span><span class="smile"></span><i class="cheek left"></i><i class="cheek right"></i></div>
+          </div>
+          <div class="ear left">AI</div><div class="ear right"></div>
+          <div class="body"><div class="logo-mark"></div></div>
+          <div class="arm left"><span></span></div><div class="arm right"><span></span></div>
+          <div class="leg left"></div><div class="leg right"></div>
+        </div>
+      </div>
     </section>
-    <section class="login-card">
+
+    <section class="login-card" aria-label="登录表单">
       <div class="auth-tabs"><button class="active">登录</button><button>注册</button></div>
-      <label><span>▯</span><input placeholder="请输入手机号/账号" /></label>
-      <label><span>🔒</span><input placeholder="请输入密码" type="password" /><b>👁</b></label>
+      <label class="field"><span class="phone-icon"></span><input placeholder="请输入手机号/账号" /></label>
+      <label class="field"><span class="lock-icon"></span><input placeholder="请输入密码" type="password" /><b class="eye-icon"></b></label>
       <div class="login-options"><label><input type="checkbox" checked />记住密码</label><label><input type="checkbox" />自动登录</label><a>忘记密码?</a></div>
       <button class="primary-btn" @click="screen = 'grade'">登录</button>
-      <div class="other-login"><span>其他登录方式</span><button>🎓 教育账号登录</button></div>
+      <div class="other-login"><span>其他登录方式</span><button><i>▰</i> 教育账号登录</button></div>
     </section>
   </main>
 
